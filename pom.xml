@@ -1,0 +1,103 @@
+	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	  <modelVersion>4.0.0</modelVersion>
+	
+	  <groupId>RestassuredBDDPractice</groupId>
+	  <artifactId>RestassuredBDDPractice</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	  <packaging>jar</packaging>
+	
+	  <name>RestassuredBDDPractice</name>
+	  <url>http://maven.apache.org</url>
+	
+	   <properties>
+	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	  <allure-testng.version>2.13.10</allure-testng.version>
+	   <allure.rest-assured.version>2.14.0</allure.rest-assured.version>
+	   <maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
+	   <maven.compiler.source>1.8</maven.compiler.source>
+	   <maven.compiler.target>1.8</maven.compiler.target>
+	   <maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
+	   <allure.maven.version>2.10.0</allure.maven.version>
+	  </properties>
+	
+	  <dependencies> 
+	 
+	<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+	<dependency>
+	    <groupId>io.rest-assured</groupId>
+	    <artifactId>rest-assured</artifactId>
+	    <version>5.2.0</version>
+	</dependency>
+	
+	
+	<!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+	<dependency>
+	    <groupId>io.rest-assured</groupId>
+	    <artifactId>json-schema-validator</artifactId>
+	    <version>5.2.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+	    <version>7.9.0</version>
+	</dependency>
+	
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.9.0</version>
+</dependency>
+
+	
+	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>2.14.0</version>
+	</dependency>
+	
+	<!--Allure Reporting Dependency-->   
+	<dependency>
+	    <groupId>io.qameta.allure</groupId>
+	    <artifactId>allure-rest-assured</artifactId>
+	    <version>${allure.rest-assured.version}</version>
+	</dependency>
+	
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure-testng.version}</version>
+        </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
+<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest-all</artifactId>
+    <version>1.3</version>
+    <scope>test</scope>
+</dependency>
+        
+	  </dependencies>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.20</version>
+            <configuration>
+
+                <systemPropertyVariables>
+                    <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                    <allure.link.issue.pattern>https://example.org/browse/{}</allure.link.issue.pattern>
+                    <allure.link.tms.pattern>https://example.org/browse/{}</allure.link.tms.pattern>
+                </systemPropertyVariables>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+	</project>
+

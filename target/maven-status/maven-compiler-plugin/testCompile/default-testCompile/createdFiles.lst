@@ -1,0 +1,3 @@
+testrunner\testrunner.class
+com\users\api\stepdefinitions\TestGetUsers.class
+com\users\api\stepdefinitions\TestPostUsers.class
