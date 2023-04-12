@@ -1,7 +1,7 @@
 package com.users.api.helpers;
 
-import com.user.api.utils.ConfigManager;
 import com.users.api.constants.EndPoints;
+import com.users.api.utils.ConfigManager;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

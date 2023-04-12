@@ -3,9 +3,9 @@ package com.users.api.helpers;
 import java.lang.reflect.Type;
 import java.util.List;
 
-import com.user.api.utils.ConfigManager;
 import com.users.api.constants.EndPoints;
 import com.users.api.model.Users;
+import com.users.api.utils.ConfigManager;
 
 import io.cucumber.core.internal.com.fasterxml.jackson.core.type.TypeReference;
 import io.restassured.RestAssured;
