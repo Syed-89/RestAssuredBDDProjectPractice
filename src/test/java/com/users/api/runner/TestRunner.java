@@ -11,8 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 		glue = {"com.users.api.stepdefinitions"},
 		plugin = {"pretty"}					
 		)
-public class TestRunner extends AbstractTestNGCucumberTests
-{
+public class TestRunner extends AbstractTestNGCucumberTests{
 	@BeforeSuite
 	public void beforeSuite()
 	{	

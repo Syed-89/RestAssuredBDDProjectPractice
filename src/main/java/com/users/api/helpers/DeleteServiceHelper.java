@@ -12,14 +12,12 @@ public class DeleteServiceHelper {
 	private static final String Base_Url=ConfigManager.getInstance().getString("baseurl");
 	
 	
-	public DeleteServiceHelper()
-	{
+	public DeleteServiceHelper(){
 		
 		RestAssured.baseURI=Base_Url;
 		
 	}
-	public Response reponse(String pathParam)
-	{
+	public Response reponse(String pathParam){
 		
 		Response response=RestAssured
 				.given()

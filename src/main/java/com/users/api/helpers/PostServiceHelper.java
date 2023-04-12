@@ -13,14 +13,13 @@ public class PostServiceHelper {
 	private static final String Base_Url=ConfigManager.getInstance().getString("baseurl");
 
 	
-	public PostServiceHelper()
-	{
+	public PostServiceHelper(){
 				
 		RestAssured.baseURI=Base_Url;		
 	}
 	
-	public Response createUser(int id, String first_name, String last_name, String email, String address)
-	{
+	public Response createUser(int id, String first_name, String last_name, String email, String address){
+		
 		Users data = new Users();
 		data.setId(id);
 		data.setFirstName(first_name);
@@ -33,6 +32,7 @@ public class PostServiceHelper {
 				.body(data)
 				.post(EndPoints.Create_User)
 				.andReturn();
+		
 		return response;
 	}
 				
