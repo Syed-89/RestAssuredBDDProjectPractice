@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="4" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-12T09:45:05 PDT" name="Default suite" finished-at="2023-04-12T09:45:09 PDT" duration-ms="3845">
+  <suite started-at="2023-09-27T11:58:48 PDT" name="Default suite" finished-at="2023-09-27T11:58:59 PDT" duration-ms="11105">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-04-12T09:45:05 PDT" name="Default test" finished-at="2023-04-12T09:45:09 PDT" duration-ms="3845">
+    <test started-at="2023-09-27T11:58:48 PDT" name="Default test" finished-at="2023-09-27T11:58:59 PDT" duration-ms="11105">
       <class name="com.users.api.runner.TestRunner">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:05 PDT" name="beforeSuite" finished-at="2023-04-12T09:45:05 PDT" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:48 PDT" name="beforeSuite" finished-at="2023-09-27T11:58:48 PDT" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:05 PDT" name="setUpClass" finished-at="2023-04-12T09:45:05 PDT" duration-ms="319" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:48 PDT" name="setUpClass" finished-at="2023-09-27T11:58:48 PDT" duration-ms="395" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@703fa45]]>
+                <![CDATA[org.testng.TestRunner@6c835217]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:05 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:07 PDT" duration-ms="2082" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:48 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:52 PDT" duration-ms="3351" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -38,10 +38,27 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at com.users.api.stepdefinitions.TestDeleteUsers.verify_the_status_code(TestDeleteUsers.java:28)
+at ✽.verify the status code 200(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/Delete.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:08 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:08 PDT" duration-ms="353" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:54 PDT" duration-ms="2491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:08 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:08 PDT" duration-ms="68" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:54 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:55 PDT" duration-ms="1094" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,7 +90,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:08 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:08 PDT" duration-ms="52" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:55 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:56 PDT" duration-ms="549" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:08 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:08 PDT" duration-ms="347" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:56 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:57 PDT" duration-ms="1505" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +122,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:08 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:09 PDT" duration-ms="195" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:57 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:58 PDT" duration-ms="832" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -118,10 +135,35 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=utf-8'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=utf-8'.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
+at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+at com.users.api.stepdefinitions.TestPostUsers.add_a_new_user(TestPostUsers.java:25)
+at ✽.add a new user 29 and fname "Peter" and lname "Albert" and email "albert@gmail.com" and street "St 23 Texas"(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/PostUser.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:09 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:09 PDT" duration-ms="67" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:58 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:59 PDT" duration-ms="578" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -134,58 +176,31 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=utf-8'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=utf-8'.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:95)
+at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+at com.users.api.stepdefinitions.TestPostUsers.add_a_new_user(TestPostUsers.java:25)
+at ✽.add a new user 30 and fname "Bardon" and lname "Watson" and email "watson@gmail.com" and street "St 23 Texas"(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/PostUser.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:09 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:09 PDT" duration-ms="41" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create a new user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Perform post operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:09 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:09 PDT" duration-ms="63" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create a new user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Perform post operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:09 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T09:45:09 PDT" duration-ms="31" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create a new user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Perform post operations"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-04-12T09:45:09 PDT" name="tearDownClass" finished-at="2023-04-12T09:45:09 PDT" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:59 PDT" name="tearDownClass" finished-at="2023-09-27T11:58:59 PDT" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

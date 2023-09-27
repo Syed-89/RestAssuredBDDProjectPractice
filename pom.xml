@@ -19,6 +19,12 @@
 	   <maven.compiler.target>1.8</maven.compiler.target>
 	   <maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
 	   <allure.maven.version>2.10.0</allure.maven.version>
+	   <rest-assured.version>5.2.0</rest-assured.version>
+	   <json.schema-validator.version>5.2.0</json.schema-validator.version>
+	   <cucumber-java.version>7.9.0</cucumber-java.version>
+	   <cucumber-testng.version>7.9.0</cucumber-testng.version>
+	   <jackson-databind.version>2.14.0</jackson-databind.version>
+	   <hamcrest-all.version>1.3</hamcrest-all.version>
 	  </properties>
 	
 	  <dependencies> 
@@ -27,7 +33,7 @@
 	<dependency>
 	    <groupId>io.rest-assured</groupId>
 	    <artifactId>rest-assured</artifactId>
-	    <version>5.2.0</version>
+	    <version>${rest-assured.version}</version>
 	</dependency>
 	
 	
@@ -35,21 +41,21 @@
 	<dependency>
 	    <groupId>io.rest-assured</groupId>
 	    <artifactId>json-schema-validator</artifactId>
-	    <version>5.2.0</version>
+	    <version>${json.schema-validator.version}</version>
 	</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 	<dependency>
 	    <groupId>io.cucumber</groupId>
 	    <artifactId>cucumber-java</artifactId>
-	    <version>7.9.0</version>
+	    <version>${cucumber-java.version}</version>
 	</dependency>
 	
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
-    <version>7.9.0</version>
+    <version>${cucumber-testng.version}</version>
 </dependency>
 
 	
@@ -57,7 +63,7 @@
 	<dependency>
 	    <groupId>com.fasterxml.jackson.core</groupId>
 	    <artifactId>jackson-databind</artifactId>
-	    <version>2.14.0</version>
+	    <version>${jackson-databind.version}</version>
 	</dependency>
 	
 	<!--Allure Reporting Dependency-->   
@@ -77,7 +83,7 @@
 <dependency>
     <groupId>org.hamcrest</groupId>
     <artifactId>hamcrest-all</artifactId>
-    <version>1.3</version>
+    <version>${hamcrest-all.version}</version>
     <scope>test</scope>
 </dependency>
         
@@ -87,7 +93,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.20</version>
+            <version>${maven-surefire-plugin-version}</version>
             <configuration>
 
                 <systemPropertyVariables>

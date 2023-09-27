@@ -7,13 +7,13 @@ import java.util.Properties;
 public class ConfigManager {
 	
 	private static ConfigManager manager=null;
-	private static Properties pro;
+	protected static Properties pro;
 	
 	public ConfigManager() throws IOException
 	{
 		
 		pro=new Properties();
-		FileInputStream fls= new FileInputStream("C:\\Users\\Syed Danish\\eclipse-workspace\\RestassuredBDDPractice\\src\\main\\java\\com\\user\\api\\configuration\\config.properties");		
+		FileInputStream fls= new FileInputStream("C:\\Users\\Syed Danish\\eclipse-workspace\\RestAssuredBDDProjectPractice\\src\\main\\java\\com\\users\\api\\configuration\\config.properties");		
 		pro.load(fls);
 		
 		

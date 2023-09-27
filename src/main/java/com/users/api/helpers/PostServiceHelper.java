@@ -12,7 +12,6 @@ public class PostServiceHelper {
 	
 	private static final String Base_Url=ConfigManager.getInstance().getString("baseurl");
 
-	
 	public PostServiceHelper(){
 				
 		RestAssured.baseURI=Base_Url;		
@@ -28,15 +27,16 @@ public class PostServiceHelper {
 		data.setAddress(address);
 		Response response=RestAssured
 				.given()
+				.header("Content-Type", "application/json")
 				.contentType(ContentType.JSON)
 				.body(data)
-				.post(EndPoints.Create_User)
-				.andReturn();
+				.post(EndPoints.Create_User);
 		
 		return response;
 	}
 				
 		
+
 		}
 		
 	
