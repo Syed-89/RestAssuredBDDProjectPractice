@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="4" failed="3" skipped="0">
+<testng-results ignored="0" total="8" passed="2" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-27T11:58:48 PDT" name="Default suite" finished-at="2023-09-27T11:58:59 PDT" duration-ms="11105">
+  <suite started-at="2023-10-25T13:01:25 PDT" name="Default suite" finished-at="2023-10-25T13:01:36 PDT" duration-ms="10736">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-09-27T11:58:48 PDT" name="Default test" finished-at="2023-09-27T11:58:59 PDT" duration-ms="11105">
+    <test started-at="2023-10-25T13:01:25 PDT" name="Default test" finished-at="2023-10-25T13:01:36 PDT" duration-ms="10736">
       <class name="com.users.api.runner.TestRunner">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:48 PDT" name="beforeSuite" finished-at="2023-09-27T11:58:48 PDT" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:25 PDT" name="beforeSuite" finished-at="2023-10-25T13:01:25 PDT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:48 PDT" name="setUpClass" finished-at="2023-09-27T11:58:48 PDT" duration-ms="395" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:25 PDT" name="setUpClass" finished-at="2023-10-25T13:01:25 PDT" duration-ms="300" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6c835217]]>
+                <![CDATA[org.testng.TestRunner@7e3d2ebd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:48 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:52 PDT" duration-ms="3351" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:25 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-25T13:01:28 PDT" duration-ms="2608" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@ at ✽.verify the status code 200(file:///C:/Users/Syed%20Danish/eclipse-workspa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:52 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:54 PDT" duration-ms="2491" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:28 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-25T13:01:30 PDT" duration-ms="1977" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -71,10 +71,27 @@ at ✽.verify the status code 200(file:///C:/Users/Syed%20Danish/eclipse-workspa
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Andrew] but found [No such user found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Andrew] but found [No such user found]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.users.api.stepdefinitions.TestGetUsers.the_user_firstname_should_be_of_userId(TestGetUsers.java:54)
+at ✽.the user firstname should be "Andrew" of userId 5(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:54 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:55 PDT" duration-ms="1094" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:30 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-25T13:01:31 PDT" duration-ms="1122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,7 +107,7 @@ at ✽.verify the status code 200(file:///C:/Users/Syed%20Danish/eclipse-workspa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:55 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:56 PDT" duration-ms="549" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:31 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-25T13:01:32 PDT" duration-ms="561" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -103,10 +120,27 @@ at ✽.verify the status code 200(file:///C:/Users/Syed%20Danish/eclipse-workspa
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [sandra@gmail.com] but found [No such email found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [sandra@gmail.com] but found [No such email found]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.users.api.stepdefinitions.TestGetUsers.email_address_should_of_the_user_id(TestGetUsers.java:93)
+at ✽.email address should "sandra@gmail.com" of the userID 3(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:56 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:57 PDT" duration-ms="1505" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:32 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-25T13:01:34 PDT" duration-ms="1851" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -122,7 +156,41 @@ at ✽.verify the status code 200(file:///C:/Users/Syed%20Danish/eclipse-workspa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:57 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:58 PDT" duration-ms="832" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:34 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-25T13:01:34 PDT" duration-ms="571" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the user details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Perform get user opertations"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[lists don't have the same size expected [2] but found [5]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: lists don't have the same size expected [2] but found [5]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:1089)
+at org.testng.Assert.assertEquals(Assert.java:1065)
+at com.users.api.stepdefinitions.TestGetUsers.the_user_details(TestGetUsers.java:125)
+at ✽.the user details should 29 and fname "Peter" and lname "Albert" and email "albert@gmail.com" and street "St 23 Texas"(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:34 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-25T13:01:35 PDT" duration-ms="896" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -163,7 +231,7 @@ at ✽.add a new user 29 and fname "Peter" and lname "Albert" and email "albert@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:58 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-27T11:58:59 PDT" duration-ms="578" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:35 PDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-25T13:01:36 PDT" duration-ms="565" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -200,7 +268,7 @@ at ✽.add a new user 30 and fname "Bardon" and lname "Watson" and email "watson
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-09-27T11:58:59 PDT" name="tearDownClass" finished-at="2023-09-27T11:58:59 PDT" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.users.api.runner.TestRunner@304bb45b]" started-at="2023-10-25T13:01:36 PDT" name="tearDownClass" finished-at="2023-10-25T13:01:36 PDT" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -12,7 +12,7 @@ import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 
   
-  public class TestPostUsers {
+  public class PostUsersStepdefinition {
   
   PostServiceHelper createUser = new PostServiceHelper(); 
   int status_code=0;

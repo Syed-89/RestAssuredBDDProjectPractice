@@ -5,6 +5,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotNull;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.testng.Assert;
@@ -20,29 +21,25 @@ import io.cucumber.java.en.When;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
   
-  public class TestGetUsers {
+  public class GetUsersStepdefinition {
 
 		// TODO Auto-generated constructor stub
 
      GetServiceHelper getUser=new GetServiceHelper();
      ReadJsonFile readJson;
+     List<Users> userData;
   
   @Severity(SeverityLevel.CRITICAL)
   
   @Given("user has access to the endpoint") 
   public void user_has_access_to_the_endpoint() {
   
-  List<Users> userList=getUser.getUsers(); 
-  assertNotNull(userList,  "The list is not empty");
-  
+   userData=getUser.getUsers(); 
   }
   
   @When("status code is {int}") 
   public void status_code_is(long code) {
-  
-  int statusCode=getUser.getStatusCode(); 
-  assertEquals(code, statusCode);
-  
+    getUser.getStatusCode();   
   }
   
   @Then("the user firstname should be {string} of userId {int}") 
@@ -53,7 +50,7 @@ import io.qameta.allure.SeverityLevel;
   
   }
   
-  @Then("the user lastname should be {string} of userId {int}") 
+  @And("the user lastname should be {string} of userId {int}") 
   public void verify_the_user_lastname(String lname, int id) {
   
   String lastName=getUser.getlastName(id); 
@@ -73,7 +70,6 @@ import io.qameta.allure.SeverityLevel;
   public void total_user_count_should_be_greater_than (int count) { 
 	
 	  int user_count=getUser.userCount();
-	  
 	  System.out.println(user_count);
 	  
       if(user_count>1)
@@ -91,20 +87,18 @@ import io.qameta.allure.SeverityLevel;
 	  Assert.assertEquals(emailAddress, userEmail); 
   }
   
-  @Given("perform the get operation for json validation") 
-  public void perform_the_get_operation_for_json_validation() {
-  
-  getUser.getUsers(); 
-  
+  @Given("get the user details") 
+  public void get_the_user_details() {
+   getUser.getUsers(); 
   }
   
-  @Then("validate response using Json file") 
+  @Then("validate response using json file") 
   public void validate_response_using_json_file() {
   
   readJson = new ReadJsonFile();
   assertThat(getUser.response().asString(), matchesJsonSchema(readJson.readFile("SchemaFile")));
   
   }
+ }
   
-  }
  

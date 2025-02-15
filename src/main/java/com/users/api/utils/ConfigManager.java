@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class ConfigManager {
 	
-	private static ConfigManager manager=null;
+	protected static ConfigManager manager=null;
 	protected static Properties pro;
 	
 	public ConfigManager() throws IOException

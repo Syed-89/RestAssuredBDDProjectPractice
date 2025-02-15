@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Syed Danish\AppData\Local\Temp\testng-eclipse-1784790232\testng-customsuite.xml</span>
+                    <span>C:\Users\Syed Danish\AppData\Local\Temp\testng-eclipse-622607673\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
+                    <span class="method-stats">8 methods, 6 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -117,6 +117,21 @@
                         <a href="#" panel-name="suite-Default_suite" title="com.users.api.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Delete the user&quot;, &quot;Perform delete operations&quot;)">runScenario("Delete the user", "Perform delete operations")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.users.api.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the single user&quot;, &quot;Perform get user opertations&quot;)">runScenario("Verify the single user", "Perform get user opertations")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.users.api.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the user details&quot;, &quot;Perform get user opertations&quot;)">runScenario("Verify the user details", "Perform get user opertations")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.users.api.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the email address of the user&quot;, &quot;Perform get user opertations&quot;)">runScenario("Verify the email address of the user", "Perform get user opertations")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
@@ -128,22 +143,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.users.api.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the email address of the user&quot;, &quot;Perform get user opertations&quot;)">runScenario("Verify the email address of the user", "Perform get user opertations")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.users.api.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the count of users&quot;, &quot;Perform get user opertations&quot;)">runScenario("Verify the count of users", "Perform get user opertations")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.users.api.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the json schema&quot;, &quot;Perform get user opertations&quot;)">runScenario("Validate the json schema", "Perform get user opertations")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.users.api.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the single user&quot;, &quot;Perform get user opertations&quot;)">runScenario("Verify the single user", "Perform get user opertations")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.users.api.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the count of users&quot;, &quot;Perform get user opertations&quot;)">runScenario("Verify the count of users", "Perform get user opertations")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -239,6 +244,70 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the single user&quot;, &quot;Perform get user opertations&quot;)">
+                  </a> <!-- runScenario("Verify the single user", "Perform get user opertations") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the single user", "Perform get user opertations")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Andrew] but found [No such user found]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.users.api.stepdefinitions.TestGetUsers.the_user_firstname_should_be_of_userId(TestGetUsers.java:54)
+	at ✽.the user firstname should be &quot;Andrew&quot; of userId 5(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:6)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the user details&quot;, &quot;Perform get user opertations&quot;)">
+                  </a> <!-- runScenario("Verify the user details", "Perform get user opertations") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the user details", "Perform get user opertations")</span>
+                  <div class="stack-trace">java.lang.AssertionError: lists don&apos;t have the same size expected [2] but found [5]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:1089)
+	at org.testng.Assert.assertEquals(Assert.java:1065)
+	at com.users.api.stepdefinitions.TestGetUsers.the_user_details(TestGetUsers.java:125)
+	at ✽.the user details should 29 and fname &quot;Peter&quot; and lname &quot;Albert&quot; and email &quot;albert@gmail.com&quot; and street &quot;St 23 Texas&quot;(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:22)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the email address of the user&quot;, &quot;Perform get user opertations&quot;)">
+                  </a> <!-- runScenario("Verify the email address of the user", "Perform get user opertations") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the email address of the user", "Perform get user opertations")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [sandra@gmail.com] but found [No such email found]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.users.api.stepdefinitions.TestGetUsers.email_address_should_of_the_user_id(TestGetUsers.java:93)
+	at ✽.email address should &quot;sandra@gmail.com&quot; of the userID 3(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:14)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
@@ -249,10 +318,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify the email address of the user&quot;, &quot;Perform get user opertations&quot;)">
-                  </a> <!-- runScenario("Verify the email address of the user", "Perform get user opertations") -->
+                  <a name="runScenario(&quot;Verify the count of users&quot;, &quot;Perform get user opertations&quot;)">
+                  </a> <!-- runScenario("Verify the count of users", "Perform get user opertations") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify the email address of the user", "Perform get user opertations")</span>
+                  <span class="parameters">("Verify the count of users", "Perform get user opertations")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -267,32 +336,12 @@
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify the single user&quot;, &quot;Perform get user opertations&quot;)">
-                  </a> <!-- runScenario("Verify the single user", "Perform get user opertations") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify the single user", "Perform get user opertations")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify the count of users&quot;, &quot;Perform get user opertations&quot;)">
-                  </a> <!-- runScenario("Verify the count of users", "Perform get user opertations") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify the count of users", "Perform get user opertations")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Syed Danish\AppData\Local\Temp\testng-eclipse-1784790232\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Syed Danish\AppData\Local\Temp\testng-eclipse-622607673\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -349,35 +398,39 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.users.api.runner.TestRunner')
-data.setCell(0, 3, 3351);
+data.setCell(0, 3, 2608);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'com.users.api.runner.TestRunner')
-data.setCell(1, 3, 2491);
+data.setCell(1, 3, 1977);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'com.users.api.runner.TestRunner')
-data.setCell(2, 3, 1505);
+data.setCell(2, 3, 1851);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'com.users.api.runner.TestRunner')
-data.setCell(3, 3, 1094);
+data.setCell(3, 3, 1122);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'com.users.api.runner.TestRunner')
-data.setCell(4, 3, 832);
+data.setCell(4, 3, 896);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'com.users.api.runner.TestRunner')
-data.setCell(5, 3, 578);
+data.setCell(5, 3, 571);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'com.users.api.runner.TestRunner')
-data.setCell(6, 3, 549);
+data.setCell(6, 3, 565);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.users.api.runner.TestRunner')
+data.setCell(7, 3, 561);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -414,46 +467,56 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6c835217)</span>
-                <span class="method-start">50 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@7e3d2ebd)</span>
+                <span class="method-start">38 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Delete the user", "Perform delete operations")</span>
-                <span class="method-start">458 ms</span>
+                <span class="method-start">347 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Verify the single user", "Perform get user opertations")</span>
-                <span class="method-start">4011 ms</span>
+                <span class="method-start">3106 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify the count of users", "Perform get user opertations")</span>
-                <span class="method-start">6508 ms</span>
+                <span class="method-start">5099 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Verify the email address of the user", "Perform get user opertations")</span>
-                <span class="method-start">7607 ms</span>
+                <span class="method-start">6227 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Validate the json schema", "Perform get user opertations")</span>
-                <span class="method-start">8162 ms</span>
+                <span class="method-start">6799 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify the user details", "Perform get user opertations")</span>
+                <span class="method-start">8657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Create a new user", "Perform post operations")</span>
-                <span class="method-start">9675 ms</span>
+                <span class="method-start">9240 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Create a new user", "Perform post operations")</span>
-                <span class="method-start">10525 ms</span>
+                <span class="method-start">10150 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">11114 ms</span>
+                <span class="method-start">10728 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

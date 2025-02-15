@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 27 11:58:48 PDT 2023</td>
+<td>Started on:</td><td>Wed Oct 25 13:01:25 PDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11105 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10736 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -93,8 +93,8 @@ function toggleAllBoxes() {
 	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
 	at com.users.api.stepdefinitions.TestPostUsers.add_a_new_user(TestPostUsers.java:25)
 	at ?.add a new user 29 and fname &quot;Peter&quot; and lname &quot;Albert&quot; and email &quot;albert@gmail.com&quot; and street &quot;St 23 Texas&quot;(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/PostUser.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1227170244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1227170244'><pre>java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=utf-8&apos;.
+</pre></div><a href='#' onClick='toggleBox("stack-trace1500020749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1500020749'><pre>java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=utf-8&apos;.
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -129,8 +129,8 @@ function toggleAllBoxes() {
 	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
 	at com.users.api.stepdefinitions.TestPostUsers.add_a_new_user(TestPostUsers.java:25)
 	at ?.add a new user 30 and fname &quot;Bardon&quot; and lname &quot;Watson&quot; and email &quot;watson@gmail.com&quot; and street &quot;St 23 Texas&quot;(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/PostUser.feature:4)
-</pre></div><a href='#' onClick='toggleBox("stack-trace358636931", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace358636931'><pre>java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=utf-8&apos;.
+</pre></div><a href='#' onClick='toggleBox("stack-trace1327169167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1327169167'><pre>java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html; charset=utf-8&apos;.
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -168,7 +168,81 @@ function toggleAllBoxes() {
 	at com.users.api.stepdefinitions.TestDeleteUsers.verify_the_status_code(TestDeleteUsers.java:28)
 	at ?.verify the status code 200(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/Delete.feature:5)
 </pre></div></td>
-<td>3</td>
+<td>2</td>
+<td>com.users.api.runner.TestRunner@304bb45b</td></tr>
+<tr>
+<td title='com.users.api.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.users.api.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the single user", "Perform get user opertations"</td>
+<td><div><pre>java.lang.AssertionError: expected [Andrew] but found [No such user found]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.users.api.stepdefinitions.TestGetUsers.the_user_firstname_should_be_of_userId(TestGetUsers.java:54)
+	at ?.the user firstname should be &quot;Andrew&quot; of userId 5(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1514687713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1514687713'><pre>java.lang.AssertionError: expected [Andrew] but found [No such user found]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.users.api.stepdefinitions.TestGetUsers.the_user_firstname_should_be_of_userId(TestGetUsers.java:54)
+	at ?.the user firstname should be &quot;Andrew&quot; of userId 5(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:6)
+</pre></div></td>
+<td>1</td>
+<td>com.users.api.runner.TestRunner@304bb45b</td></tr>
+<tr>
+<td title='com.users.api.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.users.api.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the user details", "Perform get user opertations"</td>
+<td><div><pre>java.lang.AssertionError: lists don&apos;t have the same size expected [2] but found [5]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:1089)
+	at org.testng.Assert.assertEquals(Assert.java:1065)
+	at com.users.api.stepdefinitions.TestGetUsers.the_user_details(TestGetUsers.java:125)
+	at ?.the user details should 29 and fname &quot;Peter&quot; and lname &quot;Albert&quot; and email &quot;albert@gmail.com&quot; and street &quot;St 23 Texas&quot;(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace270333767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace270333767'><pre>java.lang.AssertionError: lists don&apos;t have the same size expected [2] but found [5]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:1089)
+	at org.testng.Assert.assertEquals(Assert.java:1065)
+	at com.users.api.stepdefinitions.TestGetUsers.the_user_details(TestGetUsers.java:125)
+	at ?.the user details should 29 and fname &quot;Peter&quot; and lname &quot;Albert&quot; and email &quot;albert@gmail.com&quot; and street &quot;St 23 Texas&quot;(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:22)
+</pre></div></td>
+<td>0</td>
+<td>com.users.api.runner.TestRunner@304bb45b</td></tr>
+<tr>
+<td title='com.users.api.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.users.api.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the email address of the user", "Perform get user opertations"</td>
+<td><div><pre>java.lang.AssertionError: expected [sandra@gmail.com] but found [No such email found]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.users.api.stepdefinitions.TestGetUsers.email_address_should_of_the_user_id(TestGetUsers.java:93)
+	at ?.email address should &quot;sandra@gmail.com&quot; of the userID 3(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1217347025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1217347025'><pre>java.lang.AssertionError: expected [sandra@gmail.com] but found [No such email found]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.users.api.stepdefinitions.TestGetUsers.email_address_should_of_the_user_id(TestGetUsers.java:93)
+	at ?.email address should &quot;sandra@gmail.com&quot; of the userID 3(file:///C:/Users/Syed%20Danish/eclipse-workspace/RestAssuredBDDProjectPractice/src/test/resources/com/users/api/features/GetUser.feature:14)
+</pre></div></td>
+<td>0</td>
 <td>com.users.api.runner.TestRunner@304bb45b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -179,22 +253,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.users.api.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.users.api.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the email address of the user", "Perform get user opertations"</td>
-<td></td>
-<td>0</td>
-<td>com.users.api.runner.TestRunner@304bb45b</td></tr>
-<tr>
-<td title='com.users.api.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.users.api.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the json schema", "Perform get user opertations"</td>
+<td title='com.users.api.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.users.api.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the count of users", "Perform get user opertations"</td>
 <td></td>
 <td>1</td>
 <td>com.users.api.runner.TestRunner@304bb45b</td></tr>
 <tr>
-<td title='com.users.api.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.users.api.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the single user", "Perform get user opertations"</td>
-<td></td>
-<td>2</td>
-<td>com.users.api.runner.TestRunner@304bb45b</td></tr>
-<tr>
-<td title='com.users.api.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.users.api.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the count of users", "Perform get user opertations"</td>
+<td title='com.users.api.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.users.api.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the json schema", "Perform get user opertations"</td>
 <td></td>
 <td>1</td>
 <td>com.users.api.runner.TestRunner@304bb45b</td></tr>
